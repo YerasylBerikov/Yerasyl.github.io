@@ -1,0 +1,24 @@
+body{
+	padding:100px;
+	background-color:#c0c615;
+}
+
+
+h1 {
+    background-color: RGB(249, 201, 16); 
+   }
+   p {
+    background-color: rgb(75, 10, 239); 
+    color: white; 
+   }
+   :hover{
+    color: aqua;
+    background-color: bisque;
+   }
+    #main-image{
+
+    width:600px;
+    height: auto;
+    border:solid;
+    border-radius:20px;
+}
