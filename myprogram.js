@@ -1,33 +1,21 @@
 const movies = [
     {
-      title: "The Matrix",
+      title: "Dedpul 2",
       genre: "Science Fiction",
-      rating: 8.7,
+      rating: 7.4,
       duration: "2h 16min"
     },
     {
-      title: "The Godfather",
+      title: "Bystree Puli",
       genre: "Crime",
-      rating: 9.2,
+      rating: 7.7,
       duration: "2h 55min"
     },
     {
-      title: "Forrest Gump",
-      genre: "Drama",
-      rating: 8.8,
+      title: "Odnajdy v Gollivude",
+      genre: "Comedy",
+      rating: 5.9,
       duration: "2h 22min"
-    },
-    {
-      title: "Jurassic Park",
-      genre: "Science Fiction",
-      rating: 8.1,
-      duration: "2h 7min"
-    },
-    {
-      title: "The Dark Knight",
-      genre: "Action",
-      rating: 9.0,
-      duration: "2h 32min"
     }
   ];
   
