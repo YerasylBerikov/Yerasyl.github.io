@@ -1,49 +1,45 @@
-let movies = [ 
-    { 
-        "name": "Дэдпул 2", 
-        "genre": "Фантастика", 
-        "Grade": 7.4 
-    }, 
-    { 
-        "name": "Быстрее пули", 
-        "genre": "Боевик", 
-        "Grade": 7.7 
-    }, 
-    { 
-        "name": "Однажды в Голливуде", 
-        "genre": "Криминал", 
-        "Grade": 5.9
-    } 
-] 
-function avg(movies){ 
-    let sum = 0; 
-    for (let i = 0; i < movies.length; i++) { 
-        sum += movies[i]['Grade']; 
-    } 
-    return sum / movies.length; 
-} 
- 
-let iron_man = { 
-    "name": "Мистер и Миссис Смит", 
-    "genre": "Мелодрама", 
-    "Grade": 8.7 
-} 
- 
-movies.push(iron_man) 
- 
- 
-function write(i, movies){ 
-    return movies[i]; 
-} 
- 
-for (let i = 0; i < movies.length; i++) { 
-    let obj = write(i, movies); 
-    document.write("<h5>Movie: " + obj["name"] + "</h5>"); 
-    document.write("<h5>Genre: " + obj["genre"] + "</h5>"); 
-    document.write("<h5>Grade: " + obj["Grade"] + ""); 
-    document.writeln("") 
-} 
- 
- 
-document.write("<h5>Average Grade: " + avg(movies) + "</h5>")
-
+const movies = [
+    {
+      title: "The Matrix",
+      genre: "Science Fiction",
+      rating: 8.7,
+      duration: "2h 16min"
+    },
+    {
+      title: "The Godfather",
+      genre: "Crime",
+      rating: 9.2,
+      duration: "2h 55min"
+    },
+    {
+      title: "Forrest Gump",
+      genre: "Drama",
+      rating: 8.8,
+      duration: "2h 22min"
+    },
+    {
+      title: "Jurassic Park",
+      genre: "Science Fiction",
+      rating: 8.1,
+      duration: "2h 7min"
+    },
+    {
+      title: "The Dark Knight",
+      genre: "Action",
+      rating: 9.0,
+      duration: "2h 32min"
+    }
+  ];
+  
+  // Function to display movies on the page
+  function displayMovies() {
+    const moviesList = document.getElementById("movies");
+    movies.forEach(movie => {
+      const li = document.createElement("li");
+      li.innerText = `${movie.title} (${movie.genre}) - Rating: ${movie.rating} - Duration: ${movie.duration}`;
+      moviesList.appendChild(li);
+    });
+  }
+  
+  // Call the displayMovies function when the page loads
+  window.onload = displayMovies;
