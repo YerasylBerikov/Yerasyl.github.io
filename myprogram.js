@@ -18,6 +18,18 @@ const movies = [
       duration: "2h 22min"
     }
   ];
+function Customer(title, genre, rating, duration) {
+    this.title = title;
+    this.genre = genre; 
+    this.rating = rating;
+    this.duration = duration;
+    return {
+      title: 'Dedpul 2',
+      genre: "Science Fiction",
+      rating: 7.4,
+      duration: "2h 16min" 
+    }
+  }
   
   // Function to display movies on the page
   function displayMovies() {
